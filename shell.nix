@@ -1,19 +1,23 @@
+# shell.nix
+
 { pkgs ? import <nixpkgs> {}}:
 
 let
 
-  ###########################
-  ### YOU CAN MODIFY THIS ###
-  ###########################
+  #################
+  ### VARIABLES ###
+  #################
+
+  ### You can modify this:
 
   welcome = "Welcome to the SageMath Nix development environment!";
   mambaRootDir = "${builtins.getEnv "HOME"}/.mamba";
   envName = "sage-dev";
-  envFile = "environment-3.12-linux.yml";
+  envFile = builtins.toString ./. + "/environment-3.12-linux.yml";
 
-  ##################################
-  ### YOU SHOULD NOT MODIFY THIS ###
-  ##################################
+  #######################
+  ### FHS ENVIRONMENT ###
+  #######################
 
   fhs = pkgs.buildFHSEnv {
 
