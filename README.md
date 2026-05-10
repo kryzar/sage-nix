@@ -1,9 +1,9 @@
 # Development environment for SageMath on NixOS
 
-This is a Nix minimalist development environment made to build SageMath
-locally. We provide both a `shell.nix` file (enter the env. with `nix-shell`)
-and a flake (enter the env. with `nix develop`) to enter a `micromamba`
-development environment.
+This is a Nix minimalist development environment made to build
+[SageMath](https://www.sagemath.org/) locally. We provide both a `shell.nix`
+file (enter the env. with `nix-shell`) and a flake (enter the env. with `nix
+develop`) to enter a `micromamba` development environment.
 
 These scripts were created during the [Sage Days
 130.5](https://wiki.sagemath.org/days130.5) workshop in Montréal.
