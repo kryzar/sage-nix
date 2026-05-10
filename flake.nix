@@ -18,7 +18,7 @@
       ### You can modify this:
 
       welcome = "Welcome to the SageMath Nix development environment!";
-      mambaRootDir = "${builtins.getEnv "HOME"}/.mamba";
+      mambaRootDir = "$HOME/.mamba";
       envName = "sage-dev";
       envFile = builtins.toString ./. + "/environment-3.12-linux.yml";
 
